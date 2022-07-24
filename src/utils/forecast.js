@@ -16,15 +16,31 @@ const forecast = (lat, lon, callback) => {
         } else {
             callback(
                 undefined,
-                "At approx " +
-                    body.location.localtime +
-                    ". The weather is " +
+                "In " +
+                    body.location.name +
+                    "," +
+                    body.location.country +
+                    " (LAT: " +
+                    body.location.lat +
+                    " - LON: " +
+                    body.location.lon +
+                    ") the weather is " +
                     body.current.weather_descriptions[0] +
-                    " the temperature is " +
+                    " and the temperature is " +
                     body.current.temperature +
                     " degrees C.However, feels like " +
                     body.current.feelslike +
-                    " degrees C."
+                    " degrees C. The current local time is " +
+                    body.location.localtime +
+                    ". The air pressure is " +
+                    body.current.pressure +
+                    "mb and the humidity is " +
+                    body.current.humidity +
+                    ".The wind speed is " +
+                    body.current.wind_speed +
+                    " MPH in the " +
+                    body.current.wind_dir +
+                    " direction."
             );
         }
     });
