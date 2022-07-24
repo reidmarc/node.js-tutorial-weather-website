@@ -36,7 +36,7 @@ const forecast = (lat, lon, callback) => {
                     body.current.pressure +
                     "MB and the humidity is " +
                     body.current.humidity +
-                    ".The wind speed is " +
+                    "%. The wind speed is " +
                     body.current.wind_speed +
                     " KPH in the " +
                     body.current.wind_dir +
