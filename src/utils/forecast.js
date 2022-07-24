@@ -28,17 +28,17 @@ const forecast = (lat, lon, callback) => {
                     body.current.weather_descriptions[0] +
                     " and the temperature is " +
                     body.current.temperature +
-                    " degrees C.However, feels like " +
+                    " Celsius. However, feels like " +
                     body.current.feelslike +
-                    " degrees C. The current local time is " +
+                    " Celsius. The current local time is " +
                     body.location.localtime +
                     ". The air pressure is " +
                     body.current.pressure +
-                    "mb and the humidity is " +
+                    "MB and the humidity is " +
                     body.current.humidity +
                     ".The wind speed is " +
                     body.current.wind_speed +
-                    " MPH in the " +
+                    " KPH in the " +
                     body.current.wind_dir +
                     " direction."
             );
